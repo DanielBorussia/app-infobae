@@ -10,5 +10,5 @@ export interface ProfileGoogle {
 export interface UserLogin {
   name: string | null
   email: string | null
-  picture: string
+  picture: string | null
 }

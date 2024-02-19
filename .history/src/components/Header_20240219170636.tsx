@@ -191,7 +191,7 @@ const Header = () => {
               <Tooltip title="Opciones">
                 <React.Fragment>
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt={profile.name} src={profile.picture} />
+                  <Avatar aria-label="recipe" alt={profile.name} src={profile?.picture} />
                 </IconButton>
                 <IconButton onClick={handleCloseSession}>
                 <LogoutIcon sx={{ color: '#ffffff' }}/>

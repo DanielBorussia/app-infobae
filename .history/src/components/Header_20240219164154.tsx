@@ -13,14 +13,13 @@ import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import GoogleIcon from '@mui/icons-material/Google'
 import LogoutIcon from '@mui/icons-material/Logout'
-import { Avatar, Link } from '@mui/material'
+import { Link } from '@mui/material'
 import { useGoogleLogin } from '@react-oauth/google'
 // Redux
 import { addUserLogin, getDataUser, removeUser } from '../redux/modules/auth'
 import { useDispatch, useSelector } from 'react-redux'
 // styled
 import { BoxButtonLogin } from '../styles/HeaderStyled'
-// interfaces
 import { type AppStore } from '../shared/interfaces/AppStore'
 import { type UserLogin } from '../shared/interfaces/Profile'
 
@@ -191,7 +190,7 @@ const Header = () => {
               <Tooltip title="Opciones">
                 <React.Fragment>
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt={profile.name} src={profile.picture} />
+                  {/* <Avatar alt={profile.name} src={profile?.picture} /> */}
                 </IconButton>
                 <IconButton onClick={handleCloseSession}>
                 <LogoutIcon sx={{ color: '#ffffff' }}/>
