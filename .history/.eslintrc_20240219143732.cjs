@@ -25,7 +25,5 @@ module.exports = {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
   },
 };
