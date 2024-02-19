@@ -20,6 +20,7 @@ const PostList = () => {
         <Autocomplete
            onChange={(_event: React.SyntheticEvent, newValue: string | null) => {
              const newTag = newValue?.replace('#', '').replace(' ', '')
+             console.log('new value ' + newTag)
              if (newTag) {
                setTag(newTag)
              }

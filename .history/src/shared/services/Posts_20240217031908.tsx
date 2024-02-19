@@ -14,6 +14,6 @@ export const getAllPosts = async () => {
  * @param
  * @returns get list post by tag
  */
-export const getPostsByTag = async (tag: string | null) => {
+export const getPostsByTag = async (tag: string) => {
   return await axiosInstanceDummyApi.get(`/tag/${tag}/post`)
 }

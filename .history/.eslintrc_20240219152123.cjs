@@ -28,7 +28,6 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/return-await": "off",
     "no-tabs": 0,
   },
 };

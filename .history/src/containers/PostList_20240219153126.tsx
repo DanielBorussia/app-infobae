@@ -10,7 +10,7 @@ import { ContainerPostList } from '../styles/PostListStyled'
 const PostList = () => {
   const [inputValue, setInputValue] = useState('')
   const [tag, setTag] = useState<string | null>('')
-  const { loading, posts } = useGetPosts(tag)
+  const { loading, posts } = useGetPosts()
   const { tags } = useGetTags()
 
   return (
@@ -19,10 +19,7 @@ const PostList = () => {
       <Box display={'flex'} justifyContent={'center'} marginTop={'20px'}>
         <Autocomplete
            onChange={(_event: React.SyntheticEvent, newValue: string | null) => {
-             const newTag = newValue?.replace('#', '').replace(' ', '')
-             if (newTag) {
-               setTag(newTag)
-             }
+             setTag(newValue)
            }}
           style={{ background: 'white' }}
           value={tag}

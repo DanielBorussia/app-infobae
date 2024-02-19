@@ -19,10 +19,8 @@ const PostList = () => {
       <Box display={'flex'} justifyContent={'center'} marginTop={'20px'}>
         <Autocomplete
            onChange={(_event: React.SyntheticEvent, newValue: string | null) => {
-             const newTag = newValue?.replace('#', '').replace(' ', '')
-             if (newTag) {
-               setTag(newTag)
-             }
+             console.log(newValue?.replace('#', '').replace(' ', ''))
+             setTag(newValue)
            }}
           style={{ background: 'white' }}
           value={tag}

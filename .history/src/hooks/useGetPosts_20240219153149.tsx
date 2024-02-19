@@ -6,7 +6,7 @@ import { type Post } from '../shared/interfaces/Post'
 interface Response {
   data: Post[]
 }
-const useGetPosts = (tag: string | null) => {
+const useGetPosts = (tag: string) => {
   const [posts, setPosts] = useState<Post[]>([])
   const [loading, setLoading] = useState(false)
 
