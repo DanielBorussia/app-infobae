@@ -30,6 +30,7 @@ export const userSlice = createSlice({
       localStorage.clear()
       state.name = null
       state.email = null
+      state.picture = null
     }
   }
 })
